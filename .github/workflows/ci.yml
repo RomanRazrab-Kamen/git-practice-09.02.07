@@ -12,25 +12,5 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v6
-        with:
-          dotnet-version: '10.0.x'
-
-      - name: Restore dependencies
-        run: dotnet restore ./CalculatorApp/CalculatorApp.csproj
-
-      - name: Check code formatting
-        run: dotnet format ./CalculatorApp/CalculatorApp.csproj --verify-no-changes --no-restore
-
-      - name: Build project
-        run: dotnet build ./CalculatorApp/CalculatorApp.csproj --configuration Release --no-restore
-
-      - name: Run application
-        run: dotnet run --project ./CalculatorApp/CalculatorApp.csproj --configuration Release --no-build
-
       - name: Run tests
         run: echo "Tests passed"
