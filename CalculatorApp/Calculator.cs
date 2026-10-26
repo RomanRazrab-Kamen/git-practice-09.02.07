@@ -6,6 +6,6 @@ namespace CalculatorApp
 {
     public static class Calculator
     {
-        public static int Calculate(int a, int b) => 0;
+        public static int Add(int a, int b) => a + b;
     }
 }
