@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added CHANGELOG.md to document project history.
 - Added CONTRIBUTING.md with contribution guidelines.
 
-### Changedgit add CHANGELOG.md CONTRIBUTING.md
+### Changed
 
 - Defined contribution rules based on Conventional Commits.
 - Protected the main branch by requiring pull requests and successful CI checks.
